@@ -1,0 +1,63 @@
+<html>
+    <body>
+        <script>
+            //Regex they are two method literal and constructor method
+             //const pattern=new Regex(pattern,attributes) constructor is method
+            const a="Welcome to world"
+            const pattern=/world/g;
+             //console.log(pattern.test(a));//(test) check the a values.  the string value if there it gives true. if not there the value
+             //gives false(simplay check boolean)
+
+
+           // const Pattern=/to/m;
+           // console.log(a.match(Pattern));//(match) check to match the values.if there it gives length some special values.if not there 
+            //it will give null value
+
+            ///Falsy value:(null,undefined,"",0,NaN)These five values are false values.Aparts from  All are trues values
+
+
+            const num="6945673456";///
+            console.log(num.match(/^[6,7,8,9][0-9]{9}$/));//^(start)[Any one number start with these numbers][Range]{exactly have 9-Digits quantifier numbers}$End
+            //if we give 5number in [6...] it will gives null value
+
+
+        /* Brackets-Defines the Range of characters
+        
+         [abc]-it containes only abc 
+         [^abc] -except abc.it will come uppercase also lower case also number also
+         [a-z]-Any characters from lowercase a-z
+         [A-Z]-Any charactetrs from Uppercase A-Z
+         [a-zA-Z]-Any Characters from a-z to A-Z
+         [0-9]
+         [^0-9]
+         quantifiers gives the info about reoetition
+         []?-0 or i times it shoud appear.
+         []+-minimum 1 time or more means infinity
+         []*-0 or more times
+         []{n}-ntimes
+         []{n,}-minimum 3-ifinity
+         []{x,y}-minimum 3 and maximun 6
+
+         modifiers
+         g-means global searck
+         i-means case insensitive
+         m-multline match
+
+         reGexmeta characters
+         /d->[0-9] d means digits or decimals
+         /D->[^0-9]
+         /w->[a-zA-Z0-9] w means words 
+         /W->[^a-zA-Z0-9] it uses only special charcters like () {} # $ % & * allowed
+         /s->space
+
+         search things
+         \->escape character tells compute to treat following character as search character like[\+]
+
+
+         */
+
+
+           
+        </script>
+    </body>
+</html>
